@@ -1,0 +1,33 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+    /* box styling */
+#box  {
+    width: 10px;
+    height: 100px;
+    background-color: steelblue;
+    margin: 30px auto;
+    transition: transform 0.5s ease,
+    background-color 0.5s ease,
+}
+
+/* keyframe animations */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-150px); }
+    100% { transform: translateY(0); }
+}
+
+    /* active state applied via js */
+.active {
+    animation:bounce 1s ease-in-out;
+    background-color: tomato;
+}
+
+
+
